@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta tags help with character encoding and responsiveness -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title displayed in browser tab -->
+    <title>Three Star Media</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-container">
+        <!-- Company logo -->
+        <img
+          src="assets/images/logo.png"
+          alt="Three Star Media Logo"
+          class="logo"
+        />
+      </div>
+
+      <!-- Main navigation menu -->
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Search bar for users -->
+      <form action="#" method="get" class="search-form">
+        <input
+          type="search"
+          name="search"
+          placeholder="Search"
+          class="search-input"
+        />
+        <button type="submit" class="search-btn">&#128269;</button>
+      </form>
+    </header>
+
+    <main>
+      <!-- HERO SECTION: the first thing visitors see -->
+      <section id="home" class="hero-section">
+        <!-- Background image will be applied via CSS -->
+        <div class="hero-content">
+          <h1>Welcome to Three Star Media</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            rerum voluptas nesciunt quam nostrum similique nihil laboriosam
+            provident neque.
+          </p>
+          <!-- Call-to-action button -->
+          <a href="#contact" class="btn primary-btn">Connect with us &#9658;</a>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about-section">
+        <div class="about-image">
+          <!-- About image, usually representing the workspace or culture -->
+          <img
+            src="assets/images/about-us.jpg"
+            alt="Ping pong table in office"
+          />
+        </div>
+
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+            unde repellendus exercitationem asperiores.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+            velit ipsam? Atque accusamus.
+          </p>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section id="services" class="services-section">
+        <h2>Our Services</h2>
+
+        <!-- Grid layout for all services -->
+        <div class="services-grid">
+          <!-- Each article here represents one service card -->
+          <article class="service-card">
+            <img
+              src="assets/images/digital.jpg"
+              alt="Laptop showing analytics"
+            />
+            <h3>Digital Transformation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn secondary-btn">Digital Plans &#9658;</a>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="assets/images/marketing.jpg"
+              alt="Person holding phone with YouTube logo"
+            />
+            <h3>Marketing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn secondary-btn">Marketing Plans &#9658;</a>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="assets/images/video.jpg"
+              alt="Smartphone showing Instagram next to notebook"
+            />
+            <h3>Video Production</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn secondary-btn">Video Plans &#9658;</a>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="assets/images/web-development.jpg"
+              alt="Newspaper boxes on a city street"
+            />
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn secondary-btn">Web Plans &#9658;</a>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="assets/images/print.jpg"
+              alt="Stack of printed documents"
+            />
+            <h3>Print</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn secondary-btn">Print Plans &#9658;</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- VISION SECTION -->
+      <section class="vision-section">
+        <!-- Background image will be applied via CSS -->
+        <div class="vision-content">
+          <h2>Our Vision</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn secondary-btn">Learn More &#9658;</a>
+        </div>
+      </section>
+
+      <!-- TEAM SECTION -->
+      <section id="team" class="team-section">
+        <h2>Our Team</h2>
+
+        <div class="team-grid">
+          <!-- Team member card -->
+          <article class="team-member">
+            <img src="assets/images/john.jpg" alt="John Doe" />
+            <div class="team-info">
+              <h3>John Doe</h3>
+              <h4>CEO and Co-owner</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </article>
+
+          <article class="team-member">
+            <img src="assets/images/bob.jpg" alt="Bob Rite" />
+            <div class="team-info">
+              <h3>Bob Rite</h3>
+              <h4>CFO and Co-owner</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+
+        <div class="contact-container">
+          <!-- Contact form -->
+          <div class="contact-form-wrapper">
+            <h3>Send us a message</h3>
+            <form action="#" method="post" class="contact-form">
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn submit-btn">Send</button>
+            </form>
+          </div>
+
+          <!-- Embedded Google Map of location -->
+          <div class="contact-location">
+            <h3>Location</h3>
+            <iframe
+              src="https://maps.google.com/maps?q=Algonquin%20College&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              class="map-iframe"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- Business hours -->
+          <div class="contact-hours">
+            <h3>Hours of operation</h3>
+            <table class="hours-table">
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday - Friday</td>
+                  <td>9 AM - 6 PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday - Sunday</td>
+                  <td>Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="site-footer">
+      <p>&copy; Copyright Three Star Media, 2020</p>
+      <p>
+        All images are taken from
+        <a href="https://unsplash.com" target="_blank">Unsplash</a>
+      </p>
+    </footer>
+  </body>
+</html>
