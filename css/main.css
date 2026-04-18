@@ -1,1 +1,483 @@
+/* CSS Reset & Variables */
 
+/* CSS Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Constants & Variables */
+:root {
+    --color-gold: #c78c06;
+    --color-light-bg: #ffe6ac;
+    --color-dark: #222;
+    --color-white: white;
+    --max-width: 1200px;
+    --padding-mobile: 20px;
+    --padding-desktop: 40px;
+}
+
+/* Global Typography & Elements */
+
+h1, h2, h3, h4 {
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Button Component */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--color-gold);
+    color: var(--color-dark);
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: var(--color-dark);
+    color: var(--color-gold);
+}
+
+.primary-btn {
+    background-color: var(--color-gold);
+}
+
+.secondary-btn {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.secondary-btn:hover {
+    background-color: var(--color-gold);
+    color: var(--color-dark);
+}
+
+/* Mobile-First Component Styles */
+
+/* Header & Nav */
+.site-header {
+    background-color: var(--color-dark);
+    padding: var(--padding-mobile);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-container {
+    background-color: var(--color-gold);
+    padding: 10px 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 40px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: var(--color-gold);
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: var(--color-white);
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border: 1px solid var(--color-gold);
+    background: var(--color-white);
+}
+
+.search-btn {
+    background-color: var(--color-gold);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: linear-gradient(rgba(34,34,34,0.6), rgba(34,34,34,0.6)), url('../assets/images/main-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: var(--padding-mobile);
+    color: var(--color-white);
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 40px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: var(--color-white);
+}
+
+/* About Section */
+.about-section {
+    padding: 40px var(--padding-mobile);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.about-text {
+    background-color: var(--color-light-bg);
+    padding: 30px;
+    margin-top: -20px; /* Slight overlap for styling */
+    position: relative;
+    z-index: 1;
+}
+
+/* Services Section */
+.services-section {
+    padding: 40px var(--padding-mobile);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+/* Using CSS Grid as required */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.service-card {
+    background-color: var(--color-light-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card h3, 
+.service-card p, 
+.service-card .btn {
+    margin: 15px 20px;
+}
+
+.service-card .btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+/* Vision Section */
+.vision-section {
+    background: linear-gradient(rgba(34,34,34,0.7), rgba(34,34,34,0.7)), url('../assets/images/vision.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px var(--padding-mobile);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.vision-content h2 {
+    color: var(--color-white);
+}
+
+/* Team Section */
+.team-section {
+    padding: 40px var(--padding-mobile);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+/* Using Flexbox as required */
+.team-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.team-member {
+    background-color: var(--color-light-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team-info {
+    padding: 30px;
+}
+
+.team-info h4 {
+    color: var(--color-gold);
+    border-bottom: 2px solid var(--color-gold);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px var(--padding-mobile);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact-form-wrapper h3 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-gold);
+}
+
+.contact-form-wrapper {
+    order: 1;
+}
+
+.contact-hours {
+    order: 2;
+}
+
+.contact-location {
+    order: 3;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours-table th, 
+.hours-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-light-bg);
+}
+
+.hours-table th {
+    background-color: var(--color-light-bg);
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--color-dark);
+    color: var(--color-gold);
+    padding: 40px var(--padding-mobile);
+    text-align: center;
+}
+
+.site-footer a {
+    color: var(--color-white);
+}
+
+/* Desktop / Tablet (Min-Width: 760px) */
+
+@media screen and (min-width: 760px) {
+    /* Header & Nav */
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 40px;
+    }
+
+    .logo-container {
+        width: auto;
+    }
+
+    .logo {
+        width: auto;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .search-form {
+        width: auto;
+    }
+
+    /* About Section */
+    .about-section {
+        display: flex;
+        align-items: center;
+        padding: 80px 20px;
+    }
+
+    .about-image {
+        flex: 1;
+    }
+
+    .about-text {
+        flex: 1;
+        margin-top: 0;
+        margin-left: -40px;
+        padding: 60px;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .service-card:nth-child(1),
+    .service-card:nth-child(2) {
+        grid-column: span 3;
+    }
+
+    .service-card:nth-child(3),
+    .service-card:nth-child(4),
+    .service-card:nth-child(5) {
+        grid-column: span 2;
+    }
+
+    /* Vision Section */
+    .vision-section {
+        padding: 100px 40px;
+        text-align: left;
+    }
+
+    /* Team Grid */
+    .team-member {
+        flex-direction: row;
+    }
+
+    .team-member:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .team-member img {
+        width: 40%;
+    }
+
+    .team-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .contact-hours {
+        grid-column: 1 / -1;
+        order: 3; /* Move to bottom on desktop grid */
+    }
+
+    .contact-location {
+        order: 2; /* Position next to form on desktop */
+    }
+
+    /* General Padding */
+    .hero-section {
+        height: 70vh;
+        padding-left: 60px;
+    }
+
+    .site-footer {
+        text-align: left;
+        padding-left: 60px;
+    }
+}
